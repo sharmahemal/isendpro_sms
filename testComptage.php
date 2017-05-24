@@ -18,5 +18,6 @@ try {
     echo 'Exception when calling ComptageApi->comptage: ', $e->getMessage(), PHP_EOL;
     $reponse_erreur=$e->getResponseBody();
     echo json_encode($reponse_erreur);
+    echo "OKEY";
 }
 ?>
