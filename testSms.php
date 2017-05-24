@@ -14,6 +14,7 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling SmsApi->sendSms: ', $e->getMessage(), PHP_EOL;
     $reponse_erreur=$e->getResponseBody();
+    echo "conflict";
     echo json_encode($reponse_erreur);
 }
 ?>
